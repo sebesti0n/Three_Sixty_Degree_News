@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:strokeWidth="4dp"
+    app:strokeColor="#E6000000"
+    android:backgroundTint="@color/orange"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/news_company_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:text="companyname"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/mainHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/news_company_name"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="4dp"
+                android:text="Main Heading"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/news_company_name"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="2dp"
+                android:text="Headlines of the NEWS" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="2dp"
+                android:layout_marginBottom="3dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="26dp"
+                    android:src="@drawable/ic_person" />
+
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="2dp"
+                    android:text="AuthorName"
+                    android:textSize="8sp"
+                    android:textStyle="italic" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="6dp"
+                    android:src="@drawable/ic_clock" />
+
+                <TextView
+                    android:id="@+id/publishedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="publishedAt"
+
+                    android:textSize="8sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/img_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="@color/orange"
+            >
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/news_image"
+                android:layout_width="match_parent"
+
+                android:layout_marginEnd="15dp"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

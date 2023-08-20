@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">360News</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appname"><font fgcolor="#f57d27">360&#xb0;</font><font fgcolor="ffffff">NEWS</font></string>
+    <string name="all">All</string>
+</resources>
